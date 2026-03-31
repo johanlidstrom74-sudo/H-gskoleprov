@@ -1,0 +1,912 @@
+{
+  "version": "2026-03-31",
+  "scope": "Textbaserade matematikfrågor från högskoleprovet",
+  "includedYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "inclusionRule": "Endast textbaserade mattefrågor utan bilder, diagram, tabeller eller annan layout som blir svår att återge.",
+  "sources": {
+    "H23P2": {
+      "year": 2023,
+      "date": "22 oktober 2023",
+      "pass": "Provpass 2 kvantitativ del",
+      "sessionUrl": "https://www.studera.nu/hogskoleprov/fpn/provfragor-och-facit-hosten-2023/",
+      "pdfUrl": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2023-10-22/provpass-2-kvant.pdf"
+    },
+    "V24P2": {
+      "year": 2024,
+      "date": "13 april 2024",
+      "pass": "Provpass 2 kvantitativ del",
+      "sessionUrl": "https://www.studera.nu/hogskoleprov/fpn/provfragor-och-facit-varen-2024/",
+      "pdfUrl": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2024-04-13/provpass-2-kvant.pdf"
+    },
+    "V24P5": {
+      "year": 2024,
+      "date": "13 april 2024",
+      "pass": "Provpass 5 kvantitativ del",
+      "sessionUrl": "https://www.studera.nu/hogskoleprov/fpn/provfragor-och-facit-varen-2024/",
+      "pdfUrl": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2024-04-13/provpass-5-kvant.pdf"
+    },
+    "V25P5": {
+      "year": 2025,
+      "date": "5 april 2025",
+      "pass": "Provpass 5 kvantitativ del",
+      "sessionUrl": "https://www.studera.nu/hogskoleprov/fpn/provfragor-och-facit-varen-2025/",
+      "pdfUrl": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2025-04-05/provpass-5-kvant.pdf"
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceKey": "H23P2",
+      "questionNo": 2,
+      "subtest": "XYZ",
+      "category": "geometri",
+      "text": "I en triangel är vinklarna i förhållandet 1:2:6. Hur stor är den största vinkeln?",
+      "options": [
+        "60°",
+        "90°",
+        "120°",
+        "135°"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Rätt svar är 120°.",
+        "steps": [
+          "Förhållandena summerar till 9 delar.",
+          "En triangel har totalt 180°.",
+          "Största vinkeln är 6/9 av 180°, alltså 120°."
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "sourceKey": "H23P2",
+      "questionNo": 5,
+      "subtest": "XYZ",
+      "category": "bråk",
+      "text": "Lös ekvationen x + 3/5 = 5/8.",
+      "options": [
+        "2/3",
+        "3/8",
+        "1/40",
+        "13/40"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Rätt svar är 1/40.",
+        "steps": [
+          "Subtrahera 3/5 från båda leden.",
+          "Skriv bråken med gemensam nämnare 40.",
+          "25/40 − 24/40 = 1/40."
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "sourceKey": "H23P2",
+      "questionNo": 6,
+      "subtest": "XYZ",
+      "category": "medelvärde",
+      "text": "Medelvärdet av x och y är 16. Medelvärdet av 20 och z är 30. Vad är x + y + z?",
+      "options": [
+        "42",
+        "56",
+        "62",
+        "72"
+      ],
+      "correct": 3,
+      "explanation": {
+        "short": "Rätt svar är 72.",
+        "steps": [
+          "Om medelvärdet av x och y är 16 så är x + y = 32.",
+          "Om medelvärdet av 20 och z är 30 så är z = 40.",
+          "Summan blir 32 + 40 = 72."
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "sourceKey": "H23P2",
+      "questionNo": 7,
+      "subtest": "XYZ",
+      "category": "algebra",
+      "text": "Vilket uttryck är lika med −5x(7 − 3y)?",
+      "options": [
+        "−35x − 3y",
+        "−(35x − 15)y",
+        "(15y − 35)x",
+        "15x(y + 7)"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Rätt svar är (15y − 35)x.",
+        "steps": [
+          "Multiplicera in −5x i parentesen.",
+          "Du får −35x + 15xy.",
+          "Faktorisera x: x(15y − 35)."
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "sourceKey": "H23P2",
+      "questionNo": 9,
+      "subtest": "XYZ",
+      "category": "procent",
+      "text": "10 % av x är lika med 8 % av y. Om x = 20, vad är y?",
+      "options": [
+        "16",
+        "18",
+        "25",
+        "40"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Rätt svar är 25.",
+        "steps": [
+          "10 % av 20 är 2.",
+          "Då måste 8 % av y också vara 2.",
+          "Lös 0,08y = 2 och få y = 25."
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "sourceKey": "H23P2",
+      "questionNo": 10,
+      "subtest": "XYZ",
+      "category": "geometri",
+      "text": "En rektangel har samma area som en kvadrat med sidan s. Rektangelns korta sida är 0,7s. Hur lång är den långa sidan?",
+      "options": [
+        "s + 0,3",
+        "1,3s",
+        "0,7s",
+        "s/0,7"
+      ],
+      "correct": 3,
+      "explanation": {
+        "short": "Rätt svar är s/0,7.",
+        "steps": [
+          "Kvadratens area är s².",
+          "Rektangelns area är 0,7s · L.",
+          "Sätt lika med s² och lös ut L = s/0,7."
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "sourceKey": "V24P2",
+      "questionNo": 4,
+      "subtest": "XYZ",
+      "category": "procent",
+      "text": "60 % av x är 39. Vad är x?",
+      "options": [
+        "60",
+        "65",
+        "72",
+        "78"
+      ],
+      "correct": 1,
+      "explanation": {
+        "short": "Rätt svar är 65.",
+        "steps": [
+          "Skriv 60 % som 0,6.",
+          "Lös 0,6x = 39.",
+          "x = 39 / 0,6 = 65."
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "sourceKey": "V24P2",
+      "questionNo": 5,
+      "subtest": "XYZ",
+      "category": "algebra",
+      "text": "Vilket uttryck är lika med a(b + c) − b(a + c) + c(b − a)?",
+      "options": [
+        "0",
+        "ab − bc − ac",
+        "2(ab + ac + bc)",
+        "2c + bc − a"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är 0.",
+        "steps": [
+          "Utveckla parenteserna: ab + ac − ab − bc + bc − ac.",
+          "Alla termer tar ut varandra.",
+          "Kvar blir 0."
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "sourceKey": "V24P2",
+      "questionNo": 7,
+      "subtest": "XYZ",
+      "category": "volym",
+      "text": "En låda 50×54×72 cm fylls med klossar 5×6×9 cm. Hur många klossar får maximalt plats?",
+      "options": [
+        "270",
+        "500",
+        "650",
+        "720"
+      ],
+      "correct": 3,
+      "explanation": {
+        "short": "Rätt svar är 720.",
+        "steps": [
+          "Jämför varje mått: 50/5 = 10, 54/6 = 9 och 72/9 = 8.",
+          "Multiplicera 10 · 9 · 8.",
+          "Det ger 720 klossar."
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "sourceKey": "V24P2",
+      "questionNo": 10,
+      "subtest": "XYZ",
+      "category": "talteori",
+      "text": "För heltal x, y och z gäller xyz = 12 och 0 < x < y < z. Vilket är största möjliga värdet på z − x?",
+      "options": [
+        "1",
+        "3",
+        "5",
+        "6"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Rätt svar är 5.",
+        "steps": [
+          "Faktorisera 12 i tre stigande positiva heltal.",
+          "Den enda möjligheten är 1, 2 och 6.",
+          "Då blir z − x = 6 − 1 = 5."
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "sourceKey": "V24P2",
+      "questionNo": 13,
+      "subtest": "KVA",
+      "category": "algebra",
+      "text": "Om x − 5 = y + 5 och y = 0, hur ska x jämföras med 0?",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "x är större än 0.",
+        "steps": [
+          "Sätt in y = 0 i ekvationen.",
+          "Då blir x − 5 = 5 och alltså x = 10.",
+          "10 är större än 0."
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "sourceKey": "V24P2",
+      "questionNo": 14,
+      "subtest": "KVA",
+      "category": "tal",
+      "text": "J är det nionde jämna talet efter 15 och U är det sjunde udda talet efter 18. Jämför J − U med 0.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Kvantitet I är större.",
+        "steps": [
+          "Det nionde jämna talet efter 15 är 34.",
+          "Det sjunde udda talet efter 18 är 31.",
+          "J − U = 3, vilket är större än 0."
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "sourceKey": "V24P2",
+      "questionNo": 15,
+      "subtest": "KVA",
+      "category": "bråk",
+      "text": "Jämför medelvärdet av 1/10 och 1/5 med 1/7.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Kvantitet I är större.",
+        "steps": [
+          "Medelvärdet är (0,1 + 0,2)/2 = 0,15.",
+          "1/7 är ungefär 0,143.",
+          "0,15 är större."
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "sourceKey": "V24P2",
+      "questionNo": 20,
+      "subtest": "KVA",
+      "category": "analytisk geometri",
+      "text": "L1 går genom punkterna (−1, 3) och (1, 2). L2 är vinkelrät mot L1 och går genom origo. Jämför riktningskoefficienterna.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 1,
+      "explanation": {
+        "short": "Kvantitet II är större.",
+        "steps": [
+          "Lutningen för L1 är (2 − 3)/(1 − (−1)) = −1/2.",
+          "En vinkelrät linje har lutningen 2.",
+          "2 är större än −1/2."
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "sourceKey": "V24P2",
+      "questionNo": 21,
+      "subtest": "KVA",
+      "category": "geometri",
+      "text": "En rätvinklig triangel med sidorna 3, 4 och 5 har samma omkrets som en kvadrat. Jämför areorna.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 1,
+      "explanation": {
+        "short": "Kvantitet II är större.",
+        "steps": [
+          "Triangelns area är 3·4/2 = 6.",
+          "Kvadratens sida blir 12/4 = 3 och dess area 9.",
+          "9 är större än 6."
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "sourceKey": "V24P5",
+      "questionNo": 1,
+      "subtest": "XYZ",
+      "category": "algebra",
+      "text": "Lös ekvationen 4x + 13 = 8x − 31.",
+      "options": [
+        "−11",
+        "4,5",
+        "11",
+        "13"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Rätt svar är 11.",
+        "steps": [
+          "Flytta över 4x till högerledet och 31 till vänsterledet.",
+          "Då blir 44 = 4x.",
+          "Alltså är x = 11."
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "sourceKey": "V24P5",
+      "questionNo": 3,
+      "subtest": "XYZ",
+      "category": "bråk",
+      "text": "Vad är 1/3 − 1/2 + 1/6?",
+      "options": [
+        "−2/3",
+        "−1/3",
+        "0",
+        "1/3"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Rätt svar är 0.",
+        "steps": [
+          "Skriv alla bråk med nämnaren 6.",
+          "2/6 − 3/6 + 1/6 = 0."
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "sourceKey": "V24P5",
+      "questionNo": 4,
+      "subtest": "XYZ",
+      "category": "medelvärde",
+      "text": "Medelvärdet av 17, 21 och 44 är lika med medelvärdet av 63, 73 och x. Vad är x?",
+      "options": [
+        "−54",
+        "−27",
+        "0",
+        "71"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är −54.",
+        "steps": [
+          "Första summan är 82.",
+          "Andra trions summa måste också vara 82.",
+          "63 + 73 + x = 82 ger x = −54."
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "sourceKey": "V24P5",
+      "questionNo": 5,
+      "subtest": "XYZ",
+      "category": "hastighet",
+      "text": "Två personer startar 12 km från varandra och rör sig mot varandra. Den ena tar 12 minuter per 2 km och den andra 24 minuter per 2 km. Hur lång tid tar det innan de möts?",
+      "options": [
+        "36 minuter",
+        "42 minuter",
+        "48 minuter",
+        "72 minuter"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Rätt svar är 48 minuter.",
+        "steps": [
+          "Den första hastigheten är 10 km/h och den andra 5 km/h.",
+          "Tillsammans närmar de sig med 15 km/h.",
+          "12 km / 15 km/h = 0,8 h = 48 minuter."
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "sourceKey": "V24P5",
+      "questionNo": 9,
+      "subtest": "XYZ",
+      "category": "analytisk geometri",
+      "text": "Vilken ekvation beskriver en linje som går genom punkten (3, 1)?",
+      "options": [
+        "y = −x + 4",
+        "y = x + 2",
+        "y = 2x + 1",
+        "y = 3x + 1"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är y = −x + 4.",
+        "steps": [
+          "Sätt in x = 3 och y = 1 i varje alternativ.",
+          "Bara y = −x + 4 ger 1 = −3 + 4."
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "sourceKey": "V24P5",
+      "questionNo": 12,
+      "subtest": "XYZ",
+      "category": "geometri",
+      "text": "25 % av arean av kvadraten K1 täcks av 20 % av arean av kvadraten K2. Om K1 har sidan 2 cm, vilken sidlängd har K2?",
+      "options": [
+        "1,6 cm",
+        "2,24 cm",
+        "2,5 cm",
+        "4 cm"
+      ],
+      "correct": 1,
+      "explanation": {
+        "short": "Rätt svar är cirka 2,24 cm.",
+        "steps": [
+          "K1 har area 4 cm², så 25 % är 1 cm².",
+          "Detta är också 20 % av K2:s area, alltså är K2:s area 5 cm².",
+          "Sidlängden blir √5 ≈ 2,24 cm."
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "sourceKey": "V24P5",
+      "questionNo": 15,
+      "subtest": "KVA",
+      "category": "algebra",
+      "text": "Om (x − 1)² = 24, jämför x med 5.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 3,
+      "explanation": {
+        "short": "Informationen är otillräcklig.",
+        "steps": [
+          "x − 1 kan vara både √24 och −√24.",
+          "Därför finns två möjliga x-värden.",
+          "De kan hamna på olika sidor om 5."
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "sourceKey": "V24P5",
+      "questionNo": 23,
+      "subtest": "NOG",
+      "category": "logik",
+      "text": "Roy besöker ett apotek, ett bibliotek och en cykelhandlare. Räcker informationen för att bestämma ordningen om (1) apoteket inte var efter biblioteket och (2) cykelhandlaren varken var först eller sist?",
+      "options": [
+        "(1) räcker",
+        "(2) räcker",
+        "(1) + (2) räcker",
+        "Var och en räcker",
+        "Inte ens tillsammans"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Båda uppgifterna behövs tillsammans.",
+        "steps": [
+          "Den första begränsar ordningen delvis.",
+          "Den andra placerar cykelhandlaren i mitten.",
+          "Tillsammans går ordningen att bestämma."
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "sourceKey": "V25P5",
+      "questionNo": 1,
+      "subtest": "XYZ",
+      "category": "algebra",
+      "text": "Vilket uttryck är lika med (x + 4)(2x + 8)?",
+      "options": [
+        "2(x + 4)",
+        "3(x + 4)",
+        "2(x + 4)²",
+        "2(x² + 16)"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Rätt svar är 2(x + 4)².",
+        "steps": [
+          "Faktorisera 2 ur den andra parentesen: 2(x + 4)(x + 4).",
+          "Det blir 2(x + 4)²."
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "sourceKey": "V25P5",
+      "questionNo": 2,
+      "subtest": "XYZ",
+      "category": "talteori",
+      "text": "a är ett positivt jämnt heltal och b ett positivt udda heltal. Vilket uttryck måste vara jämnt?",
+      "options": [
+        "ab",
+        "a − b",
+        "a + b",
+        "ab + b²"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är ab.",
+        "steps": [
+          "Ett jämnt tal multiplicerat med vilket heltal som helst blir jämnt.",
+          "Alltså är ab jämnt."
+        ]
+      }
+    },
+    {
+      "id": 26,
+      "sourceKey": "V25P5",
+      "questionNo": 3,
+      "subtest": "XYZ",
+      "category": "medelvärde",
+      "text": "Medelvärdet av 2x, 3x, 5x och 8x är 45. Vad är x?",
+      "options": [
+        "5",
+        "10",
+        "15",
+        "20"
+      ],
+      "correct": 1,
+      "explanation": {
+        "short": "Rätt svar är 10.",
+        "steps": [
+          "Summan är 18x.",
+          "18x / 4 = 45 ger 18x = 180.",
+          "Alltså är x = 10."
+        ]
+      }
+    },
+    {
+      "id": 27,
+      "sourceKey": "V25P5",
+      "questionNo": 5,
+      "subtest": "XYZ",
+      "category": "funktioner",
+      "text": "Om f(x) = −4x + 7, för vilket x gäller f(x) = −9?",
+      "options": [
+        "−4",
+        "−1/2",
+        "1/2",
+        "4"
+      ],
+      "correct": 3,
+      "explanation": {
+        "short": "Rätt svar är 4.",
+        "steps": [
+          "Lös −4x + 7 = −9.",
+          "Då får du −4x = −16.",
+          "Alltså är x = 4."
+        ]
+      }
+    },
+    {
+      "id": 28,
+      "sourceKey": "V25P5",
+      "questionNo": 7,
+      "subtest": "XYZ",
+      "category": "procent",
+      "text": "En vara sänks först med 30 % och sedan med 50 % av reapriset. Slutpriset blir 70 kr. Vad var ordinarie pris?",
+      "options": [
+        "175 kr",
+        "182 kr",
+        "200 kr",
+        "350 kr"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Rätt svar är 200 kr.",
+        "steps": [
+          "Efter första sänkningen återstår 70 % av priset.",
+          "Efter andra återstår 50 % av detta, alltså totalt 35 % av ursprungspriset.",
+          "70 kr motsvarar 35 %, så ursprungspriset är 200 kr."
+        ]
+      }
+    },
+    {
+      "id": 29,
+      "sourceKey": "V25P5",
+      "questionNo": 8,
+      "subtest": "XYZ",
+      "category": "funktioner",
+      "text": "Om f(x) = 2x + 3, vilket uttryck är lika med f(2x + 3)?",
+      "options": [
+        "1",
+        "2x + 6",
+        "4x + 6",
+        "4x + 9"
+      ],
+      "correct": 3,
+      "explanation": {
+        "short": "Rätt svar är 4x + 9.",
+        "steps": [
+          "Sätt in 2x + 3 i funktionen.",
+          "2(2x + 3) + 3 = 4x + 6 + 3 = 4x + 9."
+        ]
+      }
+    },
+    {
+      "id": 30,
+      "sourceKey": "V25P5",
+      "questionNo": 10,
+      "subtest": "XYZ",
+      "category": "hastighet",
+      "text": "Erik kör 30 minuter i 30 km/h och sedan 60 minuter i 60 km/h. Vad blir medelhastigheten för hela resan?",
+      "options": [
+        "37,5 km/h",
+        "45 km/h",
+        "50 km/h",
+        "52,5 km/h"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Rätt svar är 50 km/h.",
+        "steps": [
+          "Första delen ger 15 km och andra delen 60 km.",
+          "Totalt 75 km på 1,5 timme.",
+          "75 / 1,5 = 50 km/h."
+        ]
+      }
+    },
+    {
+      "id": 31,
+      "sourceKey": "V25P5",
+      "questionNo": 11,
+      "subtest": "XYZ",
+      "category": "algebra",
+      "text": "Summan av x och y är 100 och y är 200 mer än x. Vad är x?",
+      "options": [
+        "−100",
+        "−50",
+        "100",
+        "150"
+      ],
+      "correct": 1,
+      "explanation": {
+        "short": "Rätt svar är −50.",
+        "steps": [
+          "Sätt y = x + 200.",
+          "Då blir x + x + 200 = 100.",
+          "2x = −100 och alltså x = −50."
+        ]
+      }
+    },
+    {
+      "id": 32,
+      "sourceKey": "V25P5",
+      "questionNo": 13,
+      "subtest": "KVA",
+      "category": "algebra",
+      "text": "Om x > 0 och y > 0, jämför (x − y)² med (x + y)².",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 1,
+      "explanation": {
+        "short": "Kvantitet II är större.",
+        "steps": [
+          "När x och y är positiva är x + y större i absolutbelopp än x − y.",
+          "Därför blir också dess kvadrat större."
+        ]
+      }
+    },
+    {
+      "id": 33,
+      "sourceKey": "V25P5",
+      "questionNo": 15,
+      "subtest": "KVA",
+      "category": "geometri",
+      "text": "Jämför hypotenusan i en rätvinklig triangel med kateterna 6 och 8 med hypotenusan i en triangel med kateterna 7 och 7.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Kvantitet I är större.",
+        "steps": [
+          "Första hypotenusan är √(36 + 64) = 10.",
+          "Den andra är √(49 + 49) = √98 ≈ 9,9.",
+          "Alltså är den första större."
+        ]
+      }
+    },
+    {
+      "id": 34,
+      "sourceKey": "V25P5",
+      "questionNo": 18,
+      "subtest": "KVA",
+      "category": "ekvationer",
+      "text": "Jämför den positiva lösningen till x² − 3x + 2 = 0 med 2.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 1,
+      "explanation": {
+        "short": "Kvantitet II är större.",
+        "steps": [
+          "Ekvationen faktoriseras till (x − 1)(x − 2) = 0.",
+          "Den positiva lösningen som används här är 1.",
+          "2 är större än 1."
+        ]
+      }
+    },
+    {
+      "id": 35,
+      "sourceKey": "V25P5",
+      "questionNo": 22,
+      "subtest": "KVA",
+      "category": "sannolikhet",
+      "text": "Ett mynt kastas tre gånger. Jämför sannolikheten att få klave minst en gång med 2/3.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Kvantitet I är större.",
+        "steps": [
+          "Sannolikheten för minst en klave är 1 − sannolikheten för inga klavar.",
+          "Det är 1 − (1/2)³ = 7/8.",
+          "7/8 är större än 2/3."
+        ]
+      }
+    },
+    {
+      "id": 36,
+      "sourceKey": "H23P2",
+      "questionNo": 12,
+      "subtest": "XYZ",
+      "category": "medelvärde",
+      "text": "Tre systrar hade vid en tidpunkt medelåldern 24 år. Tre år senare har två av dem medelåldern 25 år. Hur gammal är den tredje systern då?",
+      "options": [
+        "25",
+        "27",
+        "29",
+        "31"
+      ],
+      "correct": 3,
+      "explanation": {
+        "short": "Rätt svar är 31 år.",
+        "steps": [
+          "Tre systrar med medelålder 24 ger totalsumman 72.",
+          "Tre år senare är totalsumman 81.",
+          "Två systrar har då tillsammans 50 år, så den tredje är 31."
+        ]
+      }
+    },
+    {
+      "id": 37,
+      "sourceKey": "V24P2",
+      "questionNo": 24,
+      "subtest": "NOG",
+      "category": "logik",
+      "text": "Tre böcker har tillsammans 792 sidor. Boken med flest sidor har 348 sidor. Medelvärdet är lika med sidantalet i boken som ligger i mitten. Räcker informationen för att bestämma den minsta bokens sidantal?",
+      "options": [
+        "(1) räcker",
+        "(2) räcker",
+        "(1) + (2) räcker",
+        "Var och en räcker",
+        "Inte ens tillsammans"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Båda uppgifterna behövs tillsammans.",
+        "steps": [
+          "Den första uppgiften ger totalen och största boken.",
+          "Den andra säger att medelvärdet är samma som mittboken.",
+          "Tillsammans går det att räkna ut den minsta boken."
+        ]
+      }
+    },
+    {
+      "id": 38,
+      "sourceKey": "V25P5",
+      "questionNo": 17,
+      "subtest": "KVA",
+      "category": "tal",
+      "text": "I ett tresiffrigt tal är entalssiffran dubbelt så stor som tiotalssiffran och fyra gånger så stor som hundratalssiffran. Jämför entalssiffran med 4.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "De är lika.",
+        "steps": [
+          "Låt hundratalssiffran vara 1.",
+          "Då blir tiotalssiffran 2 och entalssiffran 4.",
+          "Alltså är entalssiffran lika med 4."
+        ]
+      }
+    }
+  ]
+}
