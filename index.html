@@ -1,1 +1,402 @@
-<!DOCTYPE html><html lang="sv"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#0f172a"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>HP Matematikträning</title><style>:root{--bg:#f8fafc;--card:#fff;--text:#0f172a;--muted:#64748b;--line:#e2e8f0;--primary:#0f172a;--ok:#dcfce7;--okline:#22c55e;--warn:#fef3c7;--shadow:0 10px 30px rgba(15,23,42,.08);--radius:22px}*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text)}.wrap{max-width:980px;margin:0 auto;padding:12px 12px 96px}.hero{background:linear-gradient(135deg,#0f172a,#1e293b,#334155);color:#fff;border-radius:28px;padding:20px;box-shadow:var(--shadow)}.badges{display:flex;gap:8px;flex-wrap:wrap}.badge{display:inline-flex;align-items:center;border-radius:999px;padding:7px 10px;font-size:12px;background:rgba(255,255,255,.12)}h1{font-size:28px;line-height:1.15;margin:14px 0 8px}.hero p{margin:0;color:#e2e8f0;line-height:1.55}.grid{display:grid;gap:12px}.stats{grid-template-columns:1fr 1fr;margin-top:12px}.card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px}.stat-value{font-size:28px;font-weight:700;margin-top:6px}.muted{color:var(--muted)}.controls{display:grid;gap:10px;margin-top:14px}.controls select,.controls input,.btn{width:100%;border:1px solid var(--line);border-radius:16px;min-height:48px;padding:0 14px;background:#fff;font-size:16px}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;color:var(--text);background:#fff;cursor:pointer}.btn.primary{background:var(--primary);color:#fff;border-color:var(--primary)}.question-header{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}.pill{display:inline-flex;align-items:center;border-radius:999px;padding:7px 10px;font-size:12px;border:1px solid var(--line);background:#fff}.pill.dark{background:var(--primary);color:#fff;border-color:var(--primary)}.source{border:1px solid var(--line);background:#f8fafc;border-radius:18px;padding:12px;margin-bottom:14px;font-size:14px;line-height:1.5}.source .links{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.question-text{font-size:24px;line-height:1.35;font-weight:700;margin:0 0 14px}.options{display:grid;gap:10px}.option{min-height:56px;border:1px solid var(--line);background:#fff;border-radius:18px;padding:14px;text-align:left;font-size:17px;cursor:pointer}.option.correct{background:var(--ok);border-color:var(--okline)}.option.wrong{background:#fef2f2;border-color:#ef4444}.feedback{margin-top:14px;border-radius:18px;padding:14px}.feedback.ok{background:var(--ok)}.feedback.warn{background:var(--warn)}.explanation{margin-top:12px;background:rgba(255,255,255,.7);border-radius:16px;padding:12px}.explanation ol{margin:8px 0 0 20px;padding:0}.footerbar{position:fixed;left:0;right:0;bottom:0;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:12px;padding-bottom:calc(env(safe-area-inset-bottom) + 12px)}.footerbar .row{max-width:980px;margin:0 auto;display:flex;gap:8px}.small{font-size:13px}.hidden{display:none}@media (min-width:700px){.wrap{padding:20px 20px 110px}.controls{grid-template-columns:180px 180px 1fr}.stats{grid-template-columns:1fr 1fr}h1{font-size:38px}.hero{padding:28px}}</style></head><body><div class="wrap"><section class="hero"><div class="badges"><span class="badge">Högskoleprovet</span><span class="badge">GitHub Pages-klar</span><span class="badge">2023–2025</span></div><h1>HP Matematikträning</h1><p>Textbaserade matematikfrågor från de senaste tre åren. Frågor med bilder, diagram, tabeller eller annan svår layout är medvetet bortvalda.</p></section><section class="grid stats"><div class="card"><div class="muted small">Frågor i datafilen</div><div class="stat-value" id="countQuestions">–</div><div class="muted small">Textbaserade uppgifter 2023–2025</div></div><div class="card"><div class="muted small">Framsteg</div><div class="stat-value" id="progressText">0/0</div><div class="muted small">Aktuell position i urvalet</div></div></section><section class="card" style="margin-top:12px"><div class="controls"><select id="yearFilter"><option value="alla">Alla år</option></select><select id="subtestFilter"><option value="alla">Alla delprov</option><option value="XYZ">XYZ</option><option value="KVA">KVA</option><option value="NOG">NOG</option></select><input id="searchBox" type="search" placeholder="Sök på text eller kategori"></div></section><section class="card" style="margin-top:12px" id="questionCard"><div class="question-header"><span class="pill dark" id="pillSubtest">–</span><span class="pill" id="pillId">Uppgift –</span></div><div class="source"><div><strong>Källa:</strong> <span id="sourceLine">–</span></div><div class="links"><a class="btn" id="pdfLink" target="_blank" rel="noreferrer">Öppna originalpass</a><a class="btn" id="sessionLink" target="_blank" rel="noreferrer">Öppna officiell provsida</a></div></div><h2 class="question-text" id="questionText">Laddar frågor ...</h2><div class="options" id="options"></div><div class="feedback hidden" id="feedback"><div id="feedbackTitle" style="font-weight:700"></div><div id="feedbackShort" style="margin-top:6px"></div><div class="explanation hidden" id="explanationBox"><div style="font-weight:600">Förklaring</div><ol id="explanationList"></ol></div></div></section><section class="card" style="margin-top:12px"><h3 style="margin:0 0 8px">Om urvalet</h3><div class="muted" style="line-height:1.6">Endast textbaserade matematikfrågor från 2023–2025 är med. Diagram, tabeller och andra frågor som blir svåra att återge har hoppats över.</div></section></div><div class="footerbar"><div class="row"><button class="btn" id="resetBtn">Börja om</button><button class="btn primary" id="nextBtn">Nästa fråga</button></div></div><script>let rawData=null,filtered=[],currentIndex=0,answered=false;const yearFilter=document.getElementById('yearFilter'),subtestFilter=document.getElementById('subtestFilter'),searchBox=document.getElementById('searchBox'),countQuestions=document.getElementById('countQuestions'),progressText=document.getElementById('progressText'),pillSubtest=document.getElementById('pillSubtest'),pillId=document.getElementById('pillId'),sourceLine=document.getElementById('sourceLine'),pdfLink=document.getElementById('pdfLink'),sessionLink=document.getElementById('sessionLink'),questionText=document.getElementById('questionText'),optionsEl=document.getElementById('options'),feedback=document.getElementById('feedback'),feedbackTitle=document.getElementById('feedbackTitle'),feedbackShort=document.getElementById('feedbackShort'),explanationBox=document.getElementById('explanationBox'),explanationList=document.getElementById('explanationList'),nextBtn=document.getElementById('nextBtn'),resetBtn=document.getElementById('resetBtn');async function init(){const res=await fetch('./questions.json');rawData=await res.json();const years=[...new Set(rawData.questions.map(q=>rawData.sources[q.sourceKey].year))].sort((a,b)=>b-a);years.forEach(y=>{const opt=document.createElement('option');opt.value=String(y);opt.textContent=String(y);yearFilter.appendChild(opt)});countQuestions.textContent=rawData.questions.length;applyFilters();yearFilter.addEventListener('change',()=>{currentIndex=0;applyFilters()});subtestFilter.addEventListener('change',()=>{currentIndex=0;applyFilters()});searchBox.addEventListener('input',()=>{currentIndex=0;applyFilters()});nextBtn.addEventListener('click',nextQuestion);resetBtn.addEventListener('click',resetQuiz)}function applyFilters(){const year=yearFilter.value,subtest=subtestFilter.value,q=searchBox.value.trim().toLowerCase();filtered=rawData.questions.filter(item=>{const src=rawData.sources[item.sourceKey];const matchesYear=year==='alla'||String(src.year)===year;const matchesSubtest=subtest==='alla'||item.subtest===subtest;const haystack=`${item.text} ${item.category} ${item.subtest} ${src.year} ${src.pass}`.toLowerCase();return matchesYear&&matchesSubtest&&haystack.includes(q)});answered=false;renderQuestion()}function renderQuestion(){if(!filtered.length){questionText.textContent='Inga frågor matchar ditt filter.';optionsEl.innerHTML='';feedback.className='feedback hidden';progressText.textContent='0/0';return}if(currentIndex>=filtered.length)currentIndex=filtered.length-1;const q=filtered[currentIndex],src=rawData.sources[q.sourceKey];pillSubtest.textContent=q.subtest;pillId.textContent=`Uppgift ${q.id}`;sourceLine.textContent=`${src.year} · ${src.pass} · #${q.questionNo}`;pdfLink.href=src.pdfUrl;sessionLink.href=src.sessionUrl;questionText.textContent=q.text;progressText.textContent=`${currentIndex+1}/${filtered.length}`;optionsEl.innerHTML='';q.options.forEach((opt,idx)=>{const btn=document.createElement('button');btn.className='option';btn.innerHTML=`<strong>${String.fromCharCode(65+idx)}.</strong> ${opt}`;btn.disabled=answered;btn.addEventListener('click',()=>answer(idx));optionsEl.appendChild(btn)});feedback.className='feedback hidden';feedbackTitle.textContent='';feedbackShort.textContent='';explanationList.innerHTML='';explanationBox.classList.add('hidden')}function answer(index){const q=filtered[currentIndex];answered=true;[...optionsEl.children].forEach((el,idx)=>{el.disabled=true;if(idx===q.correct)el.classList.add('correct');if(idx===index&&idx!==q.correct)el.classList.add('wrong')});const correct=index===q.correct;feedback.className=`feedback ${correct?'ok':'warn'}`;feedback.classList.remove('hidden');feedbackTitle.textContent=correct?'Rätt svar':`Inte riktigt. Rätt alternativ är ${String.fromCharCode(65+q.correct)}.`;feedbackShort.textContent=q.explanation.short;explanationList.innerHTML='';q.explanation.steps.forEach(step=>{const li=document.createElement('li');li.textContent=step;explanationList.appendChild(li)});explanationBox.classList.remove('hidden')}function nextQuestion(){if(!filtered.length||!answered)return;if(currentIndex<filtered.length-1){currentIndex+=1;answered=false;renderQuestion()}}function resetQuiz(){currentIndex=0;answered=false;renderQuestion()}init().catch(err=>{questionText.textContent='Kunde inte läsa questions.json';console.error(err)});</script></body></html>
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>HP Matematikträning</title>
+  <style>
+    :root{
+      --bg:#f8fafc; --card:#fff; --text:#0f172a; --muted:#64748b; --line:#e2e8f0;
+      --primary:#0f172a; --ok:#dcfce7; --okline:#22c55e; --warn:#fef3c7;
+      --bad:#fef2f2; --badline:#ef4444; --radius:22px; --shadow:0 10px 30px rgba(15,23,42,.08);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      background:var(--bg); color:var(--text);
+    }
+    .wrap{max-width:900px;margin:0 auto;padding:10px 12px 96px}
+    .topbar{
+      display:flex;align-items:center;justify-content:space-between;gap:10px;
+      margin-bottom:10px;padding:10px 4px 0;
+    }
+    .title{font-size:20px;font-weight:800;line-height:1.2}
+    .subtitle{font-size:13px;color:var(--muted);margin-top:2px}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px}
+    .hero{
+      margin-bottom:10px;padding:14px 16px;background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
+      color:#fff;border-radius:24px;
+    }
+    .hero p{margin:6px 0 0;color:#e2e8f0;font-size:14px;line-height:1.5}
+    .row{display:flex;gap:8px;flex-wrap:wrap}
+    .pill{
+      display:inline-flex;align-items:center;border-radius:999px;padding:7px 10px;
+      font-size:12px;border:1px solid var(--line);background:#fff;
+    }
+    .pill.dark{background:var(--primary);border-color:var(--primary);color:#fff}
+    .muted{color:var(--muted)}
+    .small{font-size:13px}
+    .compact{padding:10px 12px}
+    .question-card{margin-top:8px; scroll-margin-top: 10px;}
+    .question-meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+    .source{
+      background:#f8fafc;border:1px solid var(--line);border-radius:16px;padding:10px 12px;
+      font-size:13px;line-height:1.45;margin-bottom:12px;
+    }
+    .question-text{
+      font-size:24px;line-height:1.35;font-weight:800;letter-spacing:-0.01em;margin:0 0 14px;
+    }
+    .options{display:grid;gap:10px}
+    .option{
+      min-height:56px;border:1px solid var(--line);background:#fff;border-radius:18px;
+      padding:14px;text-align:left;font-size:17px;line-height:1.45;cursor:pointer;
+      -webkit-tap-highlight-color:transparent;
+    }
+    .option:disabled{opacity:1;color:inherit}
+    .option.correct{background:var(--ok);border-color:var(--okline)}
+    .option.wrong{background:var(--bad);border-color:var(--badline)}
+    .feedback{margin-top:14px;border-radius:18px;padding:14px}
+    .feedback.ok{background:var(--ok)}
+    .feedback.warn{background:var(--warn)}
+    .explanation{
+      margin-top:10px;background:rgba(255,255,255,.8);border-radius:16px;padding:12px
+    }
+    .explanation ol{margin:8px 0 0 18px;padding:0}
+    .controls{
+      display:flex;gap:8px;flex-wrap:wrap
+    }
+    .btn{
+      border:1px solid var(--line);border-radius:16px;min-height:46px;padding:0 14px;
+      background:#fff;color:var(--text);font-size:15px;cursor:pointer;
+      display:inline-flex;align-items:center;justify-content:center;text-decoration:none;
+    }
+    .btn.primary{background:var(--primary);border-color:var(--primary);color:#fff}
+    .btn:disabled{opacity:.45;cursor:not-allowed}
+    .progress{
+      display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;margin-bottom:10px;
+    }
+    .bar{
+      height:10px;border-radius:999px;background:#e2e8f0;overflow:hidden;
+    }
+    .bar > div{
+      height:100%;background:var(--primary);width:0%;
+    }
+    details.card summary{
+      cursor:pointer;font-weight:700;
+    }
+    details.card .details-inner{
+      margin-top:10px;padding-top:10px;border-top:1px solid var(--line);
+    }
+    .footerbar{
+      position:fixed;left:0;right:0;bottom:0;background:rgba(255,255,255,.96);
+      border-top:1px solid var(--line);backdrop-filter:blur(8px);
+      padding:10px 12px calc(env(safe-area-inset-bottom) + 12px);
+    }
+    .footerbar .row{max-width:900px;margin:0 auto}
+    .hidden{display:none !important}
+    @media (min-width:700px){
+      .wrap{padding:12px 20px 28px}
+      .footerbar{display:none}
+      .title{font-size:24px}
+      .question-text{font-size:28px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div>
+        <div class="title">HP Matematikträning</div>
+        <div class="subtitle">Fortsätter där du slutade. Ingen sparad plats? Då blandas frågorna.</div>
+      </div>
+      <div class="pill dark" id="questionCountPill">100 frågor</div>
+    </div>
+
+    <section class="hero">
+      <strong>Fokus på frågan</strong>
+      <p>Den här versionen öppnar högre upp på mobilen och håller toppdelen liten. Frågorna är textbaserade och hämtade från urval 2023–2025 utan diagram, bilder och tabeller.</p>
+    </section>
+
+    <section class="card compact">
+      <div class="progress">
+        <div>
+          <div class="small muted">Framsteg</div>
+          <div style="font-size:24px;font-weight:800" id="progressText">0/0</div>
+        </div>
+        <div class="small muted" id="scoreText">0 rätt</div>
+      </div>
+      <div class="bar"><div id="progressBar"></div></div>
+      <div class="controls" style="margin-top:12px">
+        <button class="btn" id="resumeBtn">Fortsätt</button>
+        <button class="btn" id="shuffleBtn">Ny ordning</button>
+        <button class="btn" id="resetStatsBtn">Nollställ rätt</button>
+      </div>
+    </section>
+
+    <section class="card question-card" id="questionCard">
+      <div class="question-meta">
+        <span class="pill dark" id="pillSubtest">XYZ</span>
+        <span class="pill" id="pillYear">2025</span>
+        <span class="pill" id="pillId">Uppgift 1</span>
+      </div>
+
+      <div class="source" id="sourceLine">Källa: –</div>
+      <h1 class="question-text" id="questionText">Laddar frågor ...</h1>
+      <div class="options" id="options"></div>
+
+      <div class="feedback hidden" id="feedback">
+        <div id="feedbackTitle" style="font-weight:800"></div>
+        <div id="feedbackShort" style="margin-top:6px"></div>
+        <div class="explanation hidden" id="explanationBox">
+          <div style="font-weight:700">Förklaring</div>
+          <ol id="explanationList"></ol>
+        </div>
+      </div>
+
+      <div class="controls hidden" id="desktopControls" style="margin-top:14px">
+        <button class="btn primary" id="nextBtnDesktop">Nästa fråga</button>
+      </div>
+    </section>
+
+    <details class="card" style="margin-top:10px">
+      <summary>Om urvalet</summary>
+      <div class="details-inner muted small">
+        Endast textbaserade matematikfrågor från 2023–2025 är med. Frågor med bilder, diagram, tabeller eller annan svår layout är borttagna.
+      </div>
+    </details>
+  </div>
+
+  <div class="footerbar">
+    <div class="row">
+      <button class="btn" id="shuffleBtnMobile" style="flex:1">Ny ordning</button>
+      <button class="btn primary" id="nextBtnMobile" style="flex:1.2">Nästa fråga</button>
+    </div>
+  </div>
+
+<script>
+const STORAGE_KEY = "hp-matematik-v5-state";
+const DATA_VERSION = "v5-recreated-2026-04-01";
+let rawData = null;
+let order = [];
+let currentIndex = 0;
+let answered = false;
+let stats = { attempted: 0, correct: 0 };
+
+const questionCountPill = document.getElementById("questionCountPill");
+const progressText = document.getElementById("progressText");
+const scoreText = document.getElementById("scoreText");
+const progressBar = document.getElementById("progressBar");
+const pillSubtest = document.getElementById("pillSubtest");
+const pillYear = document.getElementById("pillYear");
+const pillId = document.getElementById("pillId");
+const sourceLine = document.getElementById("sourceLine");
+const questionText = document.getElementById("questionText");
+const optionsEl = document.getElementById("options");
+const feedback = document.getElementById("feedback");
+const feedbackTitle = document.getElementById("feedbackTitle");
+const feedbackShort = document.getElementById("feedbackShort");
+const explanationBox = document.getElementById("explanationBox");
+const explanationList = document.getElementById("explanationList");
+const nextBtnDesktop = document.getElementById("nextBtnDesktop");
+const nextBtnMobile = document.getElementById("nextBtnMobile");
+const desktopControls = document.getElementById("desktopControls");
+const resumeBtn = document.getElementById("resumeBtn");
+const shuffleBtn = document.getElementById("shuffleBtn");
+const shuffleBtnMobile = document.getElementById("shuffleBtnMobile");
+const resetStatsBtn = document.getElementById("resetStatsBtn");
+const questionCard = document.getElementById("questionCard");
+
+function shuffleArray(arr) {
+  const copy = [...arr];
+  for (let i = copy.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+function saveState() {
+  const payload = {
+    version: DATA_VERSION,
+    order,
+    currentIndex,
+    stats,
+  };
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+}
+
+function loadState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    if (parsed.version !== DATA_VERSION) return null;
+    if (!Array.isArray(parsed.order)) return null;
+    return parsed;
+  } catch (err) {
+    return null;
+  }
+}
+
+function createFreshSession() {
+  order = shuffleArray(rawData.questions.map((q) => q.id));
+  currentIndex = 0;
+  stats = { attempted: 0, correct: 0 };
+  answered = false;
+  saveState();
+}
+
+function hydrateSession() {
+  const state = loadState();
+  const validIds = new Set(rawData.questions.map((q) => q.id));
+  if (
+    state &&
+    state.order.length &&
+    state.order.every((id) => validIds.has(id)) &&
+    state.currentIndex >= 0 &&
+    state.currentIndex < state.order.length
+  ) {
+    order = state.order;
+    currentIndex = state.currentIndex;
+    stats = state.stats || { attempted: 0, correct: 0 };
+  } else {
+    createFreshSession();
+  }
+}
+
+function getQuestionById(id) {
+  return rawData.questions.find((q) => q.id === id);
+}
+
+function updateProgress() {
+  progressText.textContent = `${currentIndex + 1}/${order.length}`;
+  scoreText.textContent = `${stats.correct} rätt`;
+  const percent = order.length ? ((currentIndex + 1) / order.length) * 100 : 0;
+  progressBar.style.width = `${percent}%`;
+}
+
+function scrollQuestionIntoView() {
+  requestAnimationFrame(() => {
+    questionCard.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+}
+
+function renderQuestion() {
+  const q = getQuestionById(order[currentIndex]);
+  const src = rawData.sources[q.sourceKey];
+  answered = false;
+
+  pillSubtest.textContent = q.subtest;
+  pillYear.textContent = String(src.year);
+  pillId.textContent = `Uppgift ${q.id}`;
+  sourceLine.textContent = `Källa: ${src.year} · ${src.pass} · #${q.questionNo}`;
+  questionText.textContent = q.text;
+  questionCountPill.textContent = `${rawData.questions.length} frågor`;
+
+  optionsEl.innerHTML = "";
+  q.options.forEach((option, index) => {
+    const btn = document.createElement("button");
+    btn.className = "option";
+    btn.innerHTML = `<strong>${String.fromCharCode(65 + index)}.</strong> ${option}`;
+    btn.addEventListener("click", () => answerQuestion(index));
+    optionsEl.appendChild(btn);
+  });
+
+  feedback.className = "feedback hidden";
+  feedbackTitle.textContent = "";
+  feedbackShort.textContent = "";
+  explanationBox.classList.add("hidden");
+  explanationList.innerHTML = "";
+
+  nextBtnDesktop.disabled = true;
+  nextBtnMobile.disabled = true;
+  desktopControls.classList.remove("hidden");
+
+  updateProgress();
+  saveState();
+  scrollQuestionIntoView();
+}
+
+function answerQuestion(index) {
+  if (answered) return;
+  answered = true;
+
+  const q = getQuestionById(order[currentIndex]);
+  const correct = index === q.correct;
+  stats.attempted += 1;
+  if (correct) stats.correct += 1;
+
+  [...optionsEl.children].forEach((el, idx) => {
+    el.disabled = true;
+    if (idx === q.correct) el.classList.add("correct");
+    if (idx === index && idx !== q.correct) el.classList.add("wrong");
+  });
+
+  feedback.className = `feedback ${correct ? "ok" : "warn"}`;
+  feedback.classList.remove("hidden");
+  feedbackTitle.textContent = correct ? "Rätt svar" : `Inte riktigt. Rätt alternativ är ${String.fromCharCode(65 + q.correct)}.`;
+  feedbackShort.textContent = q.explanation.short;
+
+  explanationList.innerHTML = "";
+  q.explanation.steps.forEach((step) => {
+    const li = document.createElement("li");
+    li.textContent = step;
+    explanationList.appendChild(li);
+  });
+  explanationBox.classList.remove("hidden");
+
+  nextBtnDesktop.disabled = currentIndex >= order.length - 1;
+  nextBtnMobile.disabled = currentIndex >= order.length - 1;
+
+  saveState();
+}
+
+function nextQuestion() {
+  if (!answered) return;
+  if (currentIndex < order.length - 1) {
+    currentIndex += 1;
+    renderQuestion();
+  }
+}
+
+function reshuffle() {
+  createFreshSession();
+  renderQuestion();
+}
+
+function resumeSession() {
+  hydrateSession();
+  renderQuestion();
+}
+
+function resetStatsOnly() {
+  stats = { attempted: 0, correct: 0 };
+  saveState();
+  updateProgress();
+}
+
+async function init() {
+  const res = await fetch("./questions.json");
+  rawData = await res.json();
+  hydrateSession();
+  renderQuestion();
+
+  nextBtnDesktop.addEventListener("click", nextQuestion);
+  nextBtnMobile.addEventListener("click", nextQuestion);
+  resumeBtn.addEventListener("click", resumeSession);
+  shuffleBtn.addEventListener("click", reshuffle);
+  shuffleBtnMobile.addEventListener("click", reshuffle);
+  resetStatsBtn.addEventListener("click", resetStatsOnly);
+}
+
+init().catch((err) => {
+  console.error(err);
+  questionText.textContent = "Kunde inte läsa questions.json";
+});
+</script>
+</body>
+</html>

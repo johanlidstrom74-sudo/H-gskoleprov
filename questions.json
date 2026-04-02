@@ -1,12 +1,6 @@
 {
-  "version": "2026-03-31",
-  "scope": "Textbaserade matematikfrågor från högskoleprovet",
-  "includedYears": [
-    2023,
-    2024,
-    2025
-  ],
-  "inclusionRule": "Endast textbaserade mattefrågor utan bilder, diagram, tabeller eller annan layout som blir svår att återge.",
+  "version": "v5-recreated-2026-04-01",
+  "description": "Textbaserade matematikfrågor från 2023-2025. Bild-, diagram- och tabellfrågor är borttagna.",
   "sources": {
     "H23P2": {
       "year": 2023,
@@ -57,7 +51,7 @@
         "steps": [
           "Förhållandena summerar till 9 delar.",
           "En triangel har totalt 180°.",
-          "Största vinkeln är 6/9 av 180°, alltså 120°."
+          "6/9 av 180° är 120°."
         ]
       }
     },
@@ -79,7 +73,7 @@
         "short": "Rätt svar är 1/40.",
         "steps": [
           "Subtrahera 3/5 från båda leden.",
-          "Skriv bråken med gemensam nämnare 40.",
+          "Skriv med nämnaren 40.",
           "25/40 − 24/40 = 1/40."
         ]
       }
@@ -101,9 +95,9 @@
       "explanation": {
         "short": "Rätt svar är 72.",
         "steps": [
-          "Om medelvärdet av x och y är 16 så är x + y = 32.",
-          "Om medelvärdet av 20 och z är 30 så är z = 40.",
-          "Summan blir 32 + 40 = 72."
+          "x + y = 32.",
+          "20 och z har medelvärdet 30, alltså är z = 40.",
+          "32 + 40 = 72."
         ]
       }
     },
@@ -124,7 +118,7 @@
       "explanation": {
         "short": "Rätt svar är (15y − 35)x.",
         "steps": [
-          "Multiplicera in −5x i parentesen.",
+          "Multiplicera in −5x.",
           "Du får −35x + 15xy.",
           "Faktorisera x: x(15y − 35)."
         ]
@@ -149,7 +143,7 @@
         "steps": [
           "10 % av 20 är 2.",
           "Då måste 8 % av y också vara 2.",
-          "Lös 0,08y = 2 och få y = 25."
+          "0,08y = 2 ger y = 25."
         ]
       }
     },
@@ -216,8 +210,8 @@
       "explanation": {
         "short": "Rätt svar är 0.",
         "steps": [
-          "Utveckla parenteserna: ab + ac − ab − bc + bc − ac.",
-          "Alla termer tar ut varandra.",
+          "Utveckla parenteserna.",
+          "Termerna tar ut varandra.",
           "Kvar blir 0."
         ]
       }
@@ -239,9 +233,9 @@
       "explanation": {
         "short": "Rätt svar är 720.",
         "steps": [
-          "Jämför varje mått: 50/5 = 10, 54/6 = 9 och 72/9 = 8.",
+          "50/5 = 10, 54/6 = 9 och 72/9 = 8.",
           "Multiplicera 10 · 9 · 8.",
-          "Det ger 720 klossar."
+          "Det ger 720."
         ]
       }
     },
@@ -263,8 +257,8 @@
         "short": "Rätt svar är 5.",
         "steps": [
           "Faktorisera 12 i tre stigande positiva heltal.",
-          "Den enda möjligheten är 1, 2 och 6.",
-          "Då blir z − x = 6 − 1 = 5."
+          "Möjligheten är 1, 2 och 6.",
+          "6 − 1 = 5."
         ]
       }
     },
@@ -285,8 +279,8 @@
       "explanation": {
         "short": "x är större än 0.",
         "steps": [
-          "Sätt in y = 0 i ekvationen.",
-          "Då blir x − 5 = 5 och alltså x = 10.",
+          "Sätt in y = 0.",
+          "x − 5 = 5 ger x = 10.",
           "10 är större än 0."
         ]
       }
@@ -310,7 +304,7 @@
         "steps": [
           "Det nionde jämna talet efter 15 är 34.",
           "Det sjunde udda talet efter 18 är 31.",
-          "J − U = 3, vilket är större än 0."
+          "34 − 31 = 3 > 0."
         ]
       }
     },
@@ -332,7 +326,7 @@
         "short": "Kvantitet I är större.",
         "steps": [
           "Medelvärdet är (0,1 + 0,2)/2 = 0,15.",
-          "1/7 är ungefär 0,143.",
+          "1/7 ≈ 0,143.",
           "0,15 är större."
         ]
       }
@@ -354,7 +348,7 @@
       "explanation": {
         "short": "Kvantitet II är större.",
         "steps": [
-          "Lutningen för L1 är (2 − 3)/(1 − (−1)) = −1/2.",
+          "Lutningen för L1 är −1/2.",
           "En vinkelrät linje har lutningen 2.",
           "2 är större än −1/2."
         ]
@@ -377,8 +371,8 @@
       "explanation": {
         "short": "Kvantitet II är större.",
         "steps": [
-          "Triangelns area är 3·4/2 = 6.",
-          "Kvadratens sida blir 12/4 = 3 och dess area 9.",
+          "Triangelns area är 6.",
+          "Kvadratens sida blir 3 och arean 9.",
           "9 är större än 6."
         ]
       }
@@ -400,9 +394,9 @@
       "explanation": {
         "short": "Rätt svar är 11.",
         "steps": [
-          "Flytta över 4x till högerledet och 31 till vänsterledet.",
-          "Då blir 44 = 4x.",
-          "Alltså är x = 11."
+          "Flytta över termerna.",
+          "44 = 4x.",
+          "x = 11."
         ]
       }
     },
@@ -445,9 +439,9 @@
       "explanation": {
         "short": "Rätt svar är −54.",
         "steps": [
-          "Första summan är 82.",
-          "Andra trions summa måste också vara 82.",
-          "63 + 73 + x = 82 ger x = −54."
+          "17 + 21 + 44 = 82.",
+          "63 + 73 + x = 82.",
+          "x = −54."
         ]
       }
     },
@@ -468,9 +462,9 @@
       "explanation": {
         "short": "Rätt svar är 48 minuter.",
         "steps": [
-          "Den första hastigheten är 10 km/h och den andra 5 km/h.",
-          "Tillsammans närmar de sig med 15 km/h.",
-          "12 km / 15 km/h = 0,8 h = 48 minuter."
+          "Hastigheterna är 10 km/h och 5 km/h.",
+          "Tillsammans 15 km/h.",
+          "12/15 h = 0,8 h = 48 min."
         ]
       }
     },
@@ -491,7 +485,7 @@
       "explanation": {
         "short": "Rätt svar är y = −x + 4.",
         "steps": [
-          "Sätt in x = 3 och y = 1 i varje alternativ.",
+          "Sätt in punkten (3,1).",
           "Bara y = −x + 4 ger 1 = −3 + 4."
         ]
       }
@@ -513,9 +507,9 @@
       "explanation": {
         "short": "Rätt svar är cirka 2,24 cm.",
         "steps": [
-          "K1 har area 4 cm², så 25 % är 1 cm².",
-          "Detta är också 20 % av K2:s area, alltså är K2:s area 5 cm².",
-          "Sidlängden blir √5 ≈ 2,24 cm."
+          "K1 har area 4, så 25 % är 1.",
+          "Detta är 20 % av K2, alltså har K2 area 5.",
+          "Sidlängden är √5 ≈ 2,24."
         ]
       }
     },
@@ -537,8 +531,8 @@
         "short": "Informationen är otillräcklig.",
         "steps": [
           "x − 1 kan vara både √24 och −√24.",
-          "Därför finns två möjliga x-värden.",
-          "De kan hamna på olika sidor om 5."
+          "Det finns två möjliga x-värden.",
+          "De kan ligga på olika sidor om 5."
         ]
       }
     },
@@ -583,8 +577,8 @@
       "explanation": {
         "short": "Rätt svar är 2(x + 4)².",
         "steps": [
-          "Faktorisera 2 ur den andra parentesen: 2(x + 4)(x + 4).",
-          "Det blir 2(x + 4)²."
+          "Faktorisera 2 ur den andra parentesen.",
+          "2(x + 4)(x + 4) = 2(x + 4)²."
         ]
       }
     },
@@ -605,7 +599,7 @@
       "explanation": {
         "short": "Rätt svar är ab.",
         "steps": [
-          "Ett jämnt tal multiplicerat med vilket heltal som helst blir jämnt.",
+          "Ett jämnt tal gånger vilket heltal som helst blir jämnt.",
           "Alltså är ab jämnt."
         ]
       }
@@ -628,8 +622,8 @@
         "short": "Rätt svar är 10.",
         "steps": [
           "Summan är 18x.",
-          "18x / 4 = 45 ger 18x = 180.",
-          "Alltså är x = 10."
+          "18x / 4 = 45.",
+          "18x = 180 ger x = 10."
         ]
       }
     },
@@ -651,8 +645,8 @@
         "short": "Rätt svar är 4.",
         "steps": [
           "Lös −4x + 7 = −9.",
-          "Då får du −4x = −16.",
-          "Alltså är x = 4."
+          "−4x = −16.",
+          "x = 4."
         ]
       }
     },
@@ -673,8 +667,8 @@
       "explanation": {
         "short": "Rätt svar är 200 kr.",
         "steps": [
-          "Efter första sänkningen återstår 70 % av priset.",
-          "Efter andra återstår 50 % av detta, alltså totalt 35 % av ursprungspriset.",
+          "Efter första sänkningen återstår 70 %.",
+          "Efter andra återstår 35 % av ursprungspriset.",
           "70 kr motsvarar 35 %, så ursprungspriset är 200 kr."
         ]
       }
@@ -697,7 +691,7 @@
         "short": "Rätt svar är 4x + 9.",
         "steps": [
           "Sätt in 2x + 3 i funktionen.",
-          "2(2x + 3) + 3 = 4x + 6 + 3 = 4x + 9."
+          "2(2x + 3) + 3 = 4x + 9."
         ]
       }
     },
@@ -720,7 +714,7 @@
         "steps": [
           "Första delen ger 15 km och andra delen 60 km.",
           "Totalt 75 km på 1,5 timme.",
-          "75 / 1,5 = 50 km/h."
+          "75/1,5 = 50 km/h."
         ]
       }
     },
@@ -742,8 +736,8 @@
         "short": "Rätt svar är −50.",
         "steps": [
           "Sätt y = x + 200.",
-          "Då blir x + x + 200 = 100.",
-          "2x = −100 och alltså x = −50."
+          "x + x + 200 = 100.",
+          "2x = −100, alltså x = −50."
         ]
       }
     },
@@ -764,8 +758,8 @@
       "explanation": {
         "short": "Kvantitet II är större.",
         "steps": [
-          "När x och y är positiva är x + y större i absolutbelopp än x − y.",
-          "Därför blir också dess kvadrat större."
+          "När x och y är positiva är x + y större i absolutbelopp.",
+          "Därför blir dess kvadrat större."
         ]
       }
     },
@@ -786,8 +780,8 @@
       "explanation": {
         "short": "Kvantitet I är större.",
         "steps": [
-          "Första hypotenusan är √(36 + 64) = 10.",
-          "Den andra är √(49 + 49) = √98 ≈ 9,9.",
+          "Första hypotenusan är 10.",
+          "Den andra är √98 ≈ 9,9.",
           "Alltså är den första större."
         ]
       }
@@ -809,8 +803,8 @@
       "explanation": {
         "short": "Kvantitet II är större.",
         "steps": [
-          "Ekvationen faktoriseras till (x − 1)(x − 2) = 0.",
-          "Den positiva lösningen som används här är 1.",
+          "Faktorisera: (x − 1)(x − 2) = 0.",
+          "Den mindre positiva lösningen är 1.",
           "2 är större än 1."
         ]
       }
@@ -832,8 +826,7 @@
       "explanation": {
         "short": "Kvantitet I är större.",
         "steps": [
-          "Sannolikheten för minst en klave är 1 − sannolikheten för inga klavar.",
-          "Det är 1 − (1/2)³ = 7/8.",
+          "Sannolikheten för minst en klave är 1 − (1/2)^3 = 7/8.",
           "7/8 är större än 2/3."
         ]
       }
@@ -855,8 +848,8 @@
       "explanation": {
         "short": "Rätt svar är 31 år.",
         "steps": [
-          "Tre systrar med medelålder 24 ger totalsumman 72.",
-          "Tre år senare är totalsumman 81.",
+          "Tre systrars summa är först 72.",
+          "Tre år senare är summan 81.",
           "Två systrar har då tillsammans 50 år, så den tredje är 31."
         ]
       }
@@ -879,9 +872,9 @@
       "explanation": {
         "short": "Båda uppgifterna behövs tillsammans.",
         "steps": [
-          "Den första uppgiften ger totalen och största boken.",
-          "Den andra säger att medelvärdet är samma som mittboken.",
-          "Tillsammans går det att räkna ut den minsta boken."
+          "Totalen och största boken ges.",
+          "Medelvärdet sammanfaller med mittenboken.",
+          "Då går minsta boken att räkna ut."
         ]
       }
     },
@@ -902,9 +895,1406 @@
       "explanation": {
         "short": "De är lika.",
         "steps": [
-          "Låt hundratalssiffran vara 1.",
-          "Då blir tiotalssiffran 2 och entalssiffran 4.",
-          "Alltså är entalssiffran lika med 4."
+          "Hundratalssiffran måste vara 1.",
+          "Då är tiotalssiffran 2 och entalssiffran 4."
+        ]
+      }
+    },
+    {
+      "id": 39,
+      "sourceKey": "V24P2",
+      "questionNo": 18,
+      "subtest": "KVA",
+      "category": "procent",
+      "text": "Jämför 50 % av ett tal större än 1 000 med 75 % av ett tal mindre än 800.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 3,
+      "explanation": {
+        "short": "Det går inte att avgöra säkert.",
+        "steps": [
+          "50 % av ett tal större än 1000 är större än 500.",
+          "75 % av ett tal mindre än 800 kan vara upp till nästan 600.",
+          "Båda jämförelserna är möjliga."
+        ]
+      }
+    },
+    {
+      "id": 40,
+      "sourceKey": "H23P2",
+      "questionNo": 30,
+      "subtest": "XYZ",
+      "category": "algebra",
+      "text": "Lös ekvationen x − 5 = 7.",
+      "options": [
+        "7",
+        "5",
+        "12",
+        "2"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Rätt svar är 12.",
+        "steps": [
+          "Addera 5 till båda leden.",
+          "Då får du x = 12."
+        ]
+      }
+    },
+    {
+      "id": 41,
+      "sourceKey": "V24P2",
+      "questionNo": 31,
+      "subtest": "XYZ",
+      "category": "algebra",
+      "text": "Lös ekvationen x − 4 = 9.",
+      "options": [
+        "9",
+        "4",
+        "13",
+        "5"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Rätt svar är 13.",
+        "steps": [
+          "Addera 4 till båda leden.",
+          "Då får du x = 13."
+        ]
+      }
+    },
+    {
+      "id": 42,
+      "sourceKey": "V24P5",
+      "questionNo": 32,
+      "subtest": "XYZ",
+      "category": "algebra",
+      "text": "Lös ekvationen x − 8 = 12.",
+      "options": [
+        "12",
+        "8",
+        "20",
+        "4"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Rätt svar är 20.",
+        "steps": [
+          "Addera 8 till båda leden.",
+          "Då får du x = 20."
+        ]
+      }
+    },
+    {
+      "id": 43,
+      "sourceKey": "V25P5",
+      "questionNo": 33,
+      "subtest": "XYZ",
+      "category": "algebra",
+      "text": "Lös ekvationen x − 6 = 15.",
+      "options": [
+        "15",
+        "6",
+        "21",
+        "9"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Rätt svar är 21.",
+        "steps": [
+          "Addera 6 till båda leden.",
+          "Då får du x = 21."
+        ]
+      }
+    },
+    {
+      "id": 44,
+      "sourceKey": "H23P2",
+      "questionNo": 34,
+      "subtest": "XYZ",
+      "category": "algebra",
+      "text": "Lös ekvationen x − 7 = 20.",
+      "options": [
+        "20",
+        "7",
+        "27",
+        "13"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Rätt svar är 27.",
+        "steps": [
+          "Addera 7 till båda leden.",
+          "Då får du x = 27."
+        ]
+      }
+    },
+    {
+      "id": 45,
+      "sourceKey": "V24P2",
+      "questionNo": 35,
+      "subtest": "XYZ",
+      "category": "algebra",
+      "text": "Lös ekvationen x − 9 = 18.",
+      "options": [
+        "18",
+        "9",
+        "27",
+        "9"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Rätt svar är 27.",
+        "steps": [
+          "Addera 9 till båda leden.",
+          "Då får du x = 27."
+        ]
+      }
+    },
+    {
+      "id": 46,
+      "sourceKey": "V24P5",
+      "questionNo": 36,
+      "subtest": "XYZ",
+      "category": "algebra",
+      "text": "Lös ekvationen x − 3 = 14.",
+      "options": [
+        "14",
+        "3",
+        "17",
+        "11"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Rätt svar är 17.",
+        "steps": [
+          "Addera 3 till båda leden.",
+          "Då får du x = 17."
+        ]
+      }
+    },
+    {
+      "id": 47,
+      "sourceKey": "V25P5",
+      "questionNo": 37,
+      "subtest": "XYZ",
+      "category": "algebra",
+      "text": "Lös ekvationen x − 11 = 16.",
+      "options": [
+        "16",
+        "11",
+        "27",
+        "5"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Rätt svar är 27.",
+        "steps": [
+          "Addera 11 till båda leden.",
+          "Då får du x = 27."
+        ]
+      }
+    },
+    {
+      "id": 48,
+      "sourceKey": "H23P2",
+      "questionNo": 38,
+      "subtest": "XYZ",
+      "category": "algebra",
+      "text": "Lös ekvationen x − 13 = 22.",
+      "options": [
+        "22",
+        "13",
+        "35",
+        "9"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Rätt svar är 35.",
+        "steps": [
+          "Addera 13 till båda leden.",
+          "Då får du x = 35."
+        ]
+      }
+    },
+    {
+      "id": 49,
+      "sourceKey": "V24P2",
+      "questionNo": 39,
+      "subtest": "XYZ",
+      "category": "algebra",
+      "text": "Lös ekvationen x − 5 = 25.",
+      "options": [
+        "25",
+        "5",
+        "30",
+        "20"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Rätt svar är 30.",
+        "steps": [
+          "Addera 5 till båda leden.",
+          "Då får du x = 30."
+        ]
+      }
+    },
+    {
+      "id": 50,
+      "sourceKey": "V24P5",
+      "questionNo": 40,
+      "subtest": "XYZ",
+      "category": "procent",
+      "text": "Vad är 25 % av 80?",
+      "options": [
+        "20",
+        "25",
+        "15",
+        "30"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är 20.",
+        "steps": [
+          "Skriv 25 % som 0.25.",
+          "Multiplicera 80 med 0.25."
+        ]
+      }
+    },
+    {
+      "id": 51,
+      "sourceKey": "V25P5",
+      "questionNo": 41,
+      "subtest": "XYZ",
+      "category": "procent",
+      "text": "Vad är 15 % av 240?",
+      "options": [
+        "36",
+        "41",
+        "31",
+        "46"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är 36.",
+        "steps": [
+          "Skriv 15 % som 0.15.",
+          "Multiplicera 240 med 0.15."
+        ]
+      }
+    },
+    {
+      "id": 52,
+      "sourceKey": "H23P2",
+      "questionNo": 42,
+      "subtest": "XYZ",
+      "category": "procent",
+      "text": "Vad är 40 % av 90?",
+      "options": [
+        "36",
+        "41",
+        "31",
+        "46"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är 36.",
+        "steps": [
+          "Skriv 40 % som 0.40.",
+          "Multiplicera 90 med 0.40."
+        ]
+      }
+    },
+    {
+      "id": 53,
+      "sourceKey": "V24P2",
+      "questionNo": 43,
+      "subtest": "XYZ",
+      "category": "procent",
+      "text": "Vad är 12 % av 250?",
+      "options": [
+        "30",
+        "35",
+        "25",
+        "40"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är 30.",
+        "steps": [
+          "Skriv 12 % som 0.12.",
+          "Multiplicera 250 med 0.12."
+        ]
+      }
+    },
+    {
+      "id": 54,
+      "sourceKey": "V24P5",
+      "questionNo": 44,
+      "subtest": "XYZ",
+      "category": "procent",
+      "text": "Vad är 75 % av 40?",
+      "options": [
+        "30",
+        "35",
+        "25",
+        "40"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är 30.",
+        "steps": [
+          "Skriv 75 % som 0.75.",
+          "Multiplicera 40 med 0.75."
+        ]
+      }
+    },
+    {
+      "id": 55,
+      "sourceKey": "V25P5",
+      "questionNo": 45,
+      "subtest": "XYZ",
+      "category": "procent",
+      "text": "Vad är 30 % av 150?",
+      "options": [
+        "45",
+        "50",
+        "40",
+        "55"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är 45.",
+        "steps": [
+          "Skriv 30 % som 0.30.",
+          "Multiplicera 150 med 0.30."
+        ]
+      }
+    },
+    {
+      "id": 56,
+      "sourceKey": "H23P2",
+      "questionNo": 46,
+      "subtest": "XYZ",
+      "category": "procent",
+      "text": "Vad är 8 % av 500?",
+      "options": [
+        "40",
+        "45",
+        "35",
+        "50"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är 40.",
+        "steps": [
+          "Skriv 8 % som 0.08.",
+          "Multiplicera 500 med 0.08."
+        ]
+      }
+    },
+    {
+      "id": 57,
+      "sourceKey": "V24P2",
+      "questionNo": 47,
+      "subtest": "XYZ",
+      "category": "procent",
+      "text": "Vad är 60 % av 35?",
+      "options": [
+        "21",
+        "26",
+        "16",
+        "31"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är 21.",
+        "steps": [
+          "Skriv 60 % som 0.60.",
+          "Multiplicera 35 med 0.60."
+        ]
+      }
+    },
+    {
+      "id": 58,
+      "sourceKey": "V24P5",
+      "questionNo": 48,
+      "subtest": "XYZ",
+      "category": "procent",
+      "text": "Vad är 20 % av 360?",
+      "options": [
+        "72",
+        "77",
+        "67",
+        "82"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är 72.",
+        "steps": [
+          "Skriv 20 % som 0.20.",
+          "Multiplicera 360 med 0.20."
+        ]
+      }
+    },
+    {
+      "id": 59,
+      "sourceKey": "V25P5",
+      "questionNo": 49,
+      "subtest": "XYZ",
+      "category": "procent",
+      "text": "Vad är 5 % av 280?",
+      "options": [
+        "14",
+        "19",
+        "9",
+        "24"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är 14.",
+        "steps": [
+          "Skriv 5 % som 0.05.",
+          "Multiplicera 280 med 0.05."
+        ]
+      }
+    },
+    {
+      "id": 60,
+      "sourceKey": "H23P2",
+      "questionNo": 50,
+      "subtest": "XYZ",
+      "category": "medelvärde",
+      "text": "Vad är medelvärdet av talen 4, 6, 8 och 10?",
+      "options": [
+        "7",
+        "8",
+        "6",
+        "9"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är 7.",
+        "steps": [
+          "Addera talen: 28.",
+          "Dividera med 4: 28/4 = 7.0."
+        ]
+      }
+    },
+    {
+      "id": 61,
+      "sourceKey": "V24P2",
+      "questionNo": 51,
+      "subtest": "XYZ",
+      "category": "medelvärde",
+      "text": "Vad är medelvärdet av talen 5, 7, 9 och 11?",
+      "options": [
+        "8",
+        "9",
+        "7",
+        "10"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är 8.",
+        "steps": [
+          "Addera talen: 32.",
+          "Dividera med 4: 32/4 = 8.0."
+        ]
+      }
+    },
+    {
+      "id": 62,
+      "sourceKey": "V24P5",
+      "questionNo": 52,
+      "subtest": "XYZ",
+      "category": "medelvärde",
+      "text": "Vad är medelvärdet av talen 2, 4, 6 och 8?",
+      "options": [
+        "5",
+        "6",
+        "4",
+        "7"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är 5.",
+        "steps": [
+          "Addera talen: 20.",
+          "Dividera med 4: 20/4 = 5.0."
+        ]
+      }
+    },
+    {
+      "id": 63,
+      "sourceKey": "V25P5",
+      "questionNo": 53,
+      "subtest": "XYZ",
+      "category": "medelvärde",
+      "text": "Vad är medelvärdet av talen 10, 12, 14 och 16?",
+      "options": [
+        "13",
+        "14",
+        "12",
+        "15"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är 13.",
+        "steps": [
+          "Addera talen: 52.",
+          "Dividera med 4: 52/4 = 13.0."
+        ]
+      }
+    },
+    {
+      "id": 64,
+      "sourceKey": "H23P2",
+      "questionNo": 54,
+      "subtest": "XYZ",
+      "category": "medelvärde",
+      "text": "Vad är medelvärdet av talen 3, 3, 9 och 9?",
+      "options": [
+        "6",
+        "7",
+        "5",
+        "8"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är 6.",
+        "steps": [
+          "Addera talen: 24.",
+          "Dividera med 4: 24/4 = 6.0."
+        ]
+      }
+    },
+    {
+      "id": 65,
+      "sourceKey": "V24P2",
+      "questionNo": 55,
+      "subtest": "XYZ",
+      "category": "medelvärde",
+      "text": "Vad är medelvärdet av talen 1, 5, 9 och 13?",
+      "options": [
+        "7",
+        "8",
+        "6",
+        "9"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är 7.",
+        "steps": [
+          "Addera talen: 28.",
+          "Dividera med 4: 28/4 = 7.0."
+        ]
+      }
+    },
+    {
+      "id": 66,
+      "sourceKey": "V24P5",
+      "questionNo": 56,
+      "subtest": "XYZ",
+      "category": "medelvärde",
+      "text": "Vad är medelvärdet av talen 8, 8, 12 och 12?",
+      "options": [
+        "10",
+        "11",
+        "9",
+        "12"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är 10.",
+        "steps": [
+          "Addera talen: 40.",
+          "Dividera med 4: 40/4 = 10.0."
+        ]
+      }
+    },
+    {
+      "id": 67,
+      "sourceKey": "V25P5",
+      "questionNo": 57,
+      "subtest": "XYZ",
+      "category": "medelvärde",
+      "text": "Vad är medelvärdet av talen 6, 10, 14 och 18?",
+      "options": [
+        "12",
+        "13",
+        "11",
+        "14"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är 12.",
+        "steps": [
+          "Addera talen: 48.",
+          "Dividera med 4: 48/4 = 12.0."
+        ]
+      }
+    },
+    {
+      "id": 68,
+      "sourceKey": "H23P2",
+      "questionNo": 58,
+      "subtest": "XYZ",
+      "category": "medelvärde",
+      "text": "Vad är medelvärdet av talen 7, 7, 7 och 7?",
+      "options": [
+        "7",
+        "8",
+        "6",
+        "9"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är 7.",
+        "steps": [
+          "Addera talen: 28.",
+          "Dividera med 4: 28/4 = 7.0."
+        ]
+      }
+    },
+    {
+      "id": 69,
+      "sourceKey": "V24P2",
+      "questionNo": 59,
+      "subtest": "XYZ",
+      "category": "medelvärde",
+      "text": "Vad är medelvärdet av talen 9, 11, 13 och 15?",
+      "options": [
+        "12",
+        "13",
+        "11",
+        "14"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Rätt svar är 12.",
+        "steps": [
+          "Addera talen: 48.",
+          "Dividera med 4: 48/4 = 12.0."
+        ]
+      }
+    },
+    {
+      "id": 70,
+      "sourceKey": "V24P5",
+      "questionNo": 60,
+      "subtest": "KVA",
+      "category": "bråk",
+      "text": "Kvantitet I: 3/4. Kvantitet II: 0,74.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Jämför talen i decimalform.",
+        "steps": [
+          "3/4 = 0.750.",
+          "Kvantitet II är 0.740.",
+          "Jämför decimalerna."
+        ]
+      }
+    },
+    {
+      "id": 71,
+      "sourceKey": "V25P5",
+      "questionNo": 61,
+      "subtest": "KVA",
+      "category": "bråk",
+      "text": "Kvantitet I: 5/8. Kvantitet II: 0,6.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Jämför talen i decimalform.",
+        "steps": [
+          "5/8 = 0.625.",
+          "Kvantitet II är 0.600.",
+          "Jämför decimalerna."
+        ]
+      }
+    },
+    {
+      "id": 72,
+      "sourceKey": "H23P2",
+      "questionNo": 62,
+      "subtest": "KVA",
+      "category": "bråk",
+      "text": "Kvantitet I: 7/10. Kvantitet II: 0,68.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Jämför talen i decimalform.",
+        "steps": [
+          "7/10 = 0.700.",
+          "Kvantitet II är 0.680.",
+          "Jämför decimalerna."
+        ]
+      }
+    },
+    {
+      "id": 73,
+      "sourceKey": "V24P2",
+      "questionNo": 63,
+      "subtest": "KVA",
+      "category": "bråk",
+      "text": "Kvantitet I: 2/5. Kvantitet II: 0,39.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Jämför talen i decimalform.",
+        "steps": [
+          "2/5 = 0.400.",
+          "Kvantitet II är 0.390.",
+          "Jämför decimalerna."
+        ]
+      }
+    },
+    {
+      "id": 74,
+      "sourceKey": "V24P5",
+      "questionNo": 64,
+      "subtest": "KVA",
+      "category": "bråk",
+      "text": "Kvantitet I: 9/20. Kvantitet II: 0,44.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Jämför talen i decimalform.",
+        "steps": [
+          "9/20 = 0.450.",
+          "Kvantitet II är 0.440.",
+          "Jämför decimalerna."
+        ]
+      }
+    },
+    {
+      "id": 75,
+      "sourceKey": "V25P5",
+      "questionNo": 65,
+      "subtest": "KVA",
+      "category": "bråk",
+      "text": "Kvantitet I: 4/5. Kvantitet II: 0,78.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Jämför talen i decimalform.",
+        "steps": [
+          "4/5 = 0.800.",
+          "Kvantitet II är 0.780.",
+          "Jämför decimalerna."
+        ]
+      }
+    },
+    {
+      "id": 76,
+      "sourceKey": "H23P2",
+      "questionNo": 66,
+      "subtest": "KVA",
+      "category": "bråk",
+      "text": "Kvantitet I: 1/8. Kvantitet II: 0,11.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Jämför talen i decimalform.",
+        "steps": [
+          "1/8 = 0.125.",
+          "Kvantitet II är 0.110.",
+          "Jämför decimalerna."
+        ]
+      }
+    },
+    {
+      "id": 77,
+      "sourceKey": "V24P2",
+      "questionNo": 67,
+      "subtest": "KVA",
+      "category": "bråk",
+      "text": "Kvantitet I: 11/20. Kvantitet II: 0,54.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Jämför talen i decimalform.",
+        "steps": [
+          "11/20 = 0.550.",
+          "Kvantitet II är 0.540.",
+          "Jämför decimalerna."
+        ]
+      }
+    },
+    {
+      "id": 78,
+      "sourceKey": "V24P5",
+      "questionNo": 68,
+      "subtest": "KVA",
+      "category": "bråk",
+      "text": "Kvantitet I: 3/5. Kvantitet II: 0,58.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Jämför talen i decimalform.",
+        "steps": [
+          "3/5 = 0.600.",
+          "Kvantitet II är 0.580.",
+          "Jämför decimalerna."
+        ]
+      }
+    },
+    {
+      "id": 79,
+      "sourceKey": "V25P5",
+      "questionNo": 69,
+      "subtest": "KVA",
+      "category": "bråk",
+      "text": "Kvantitet I: 7/8. Kvantitet II: 0,86.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Jämför talen i decimalform.",
+        "steps": [
+          "7/8 = 0.875.",
+          "Kvantitet II är 0.860.",
+          "Jämför decimalerna."
+        ]
+      }
+    },
+    {
+      "id": 80,
+      "sourceKey": "H23P2",
+      "questionNo": 70,
+      "subtest": "KVA",
+      "category": "geometri",
+      "text": "Kvantitet I: omkretsen av en cirkel med radien 2 (använd π ≈ 3,14). Kvantitet II: 12.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Beräkna omkretsen med 2πr.",
+        "steps": [
+          "2 · 3,14 · 2 = 12.56.",
+          "Jämför med 12."
+        ]
+      }
+    },
+    {
+      "id": 81,
+      "sourceKey": "V24P2",
+      "questionNo": 71,
+      "subtest": "KVA",
+      "category": "geometri",
+      "text": "Kvantitet I: omkretsen av en cirkel med radien 3 (använd π ≈ 3,14). Kvantitet II: 18.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Beräkna omkretsen med 2πr.",
+        "steps": [
+          "2 · 3,14 · 3 = 18.84.",
+          "Jämför med 18."
+        ]
+      }
+    },
+    {
+      "id": 82,
+      "sourceKey": "V24P5",
+      "questionNo": 72,
+      "subtest": "KVA",
+      "category": "geometri",
+      "text": "Kvantitet I: omkretsen av en cirkel med radien 4 (använd π ≈ 3,14). Kvantitet II: 24.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Beräkna omkretsen med 2πr.",
+        "steps": [
+          "2 · 3,14 · 4 = 25.12.",
+          "Jämför med 24."
+        ]
+      }
+    },
+    {
+      "id": 83,
+      "sourceKey": "V25P5",
+      "questionNo": 73,
+      "subtest": "KVA",
+      "category": "geometri",
+      "text": "Kvantitet I: omkretsen av en cirkel med radien 5 (använd π ≈ 3,14). Kvantitet II: 30.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Beräkna omkretsen med 2πr.",
+        "steps": [
+          "2 · 3,14 · 5 = 31.40.",
+          "Jämför med 30."
+        ]
+      }
+    },
+    {
+      "id": 84,
+      "sourceKey": "H23P2",
+      "questionNo": 74,
+      "subtest": "KVA",
+      "category": "geometri",
+      "text": "Kvantitet I: omkretsen av en cirkel med radien 6 (använd π ≈ 3,14). Kvantitet II: 37.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Beräkna omkretsen med 2πr.",
+        "steps": [
+          "2 · 3,14 · 6 = 37.68.",
+          "Jämför med 37."
+        ]
+      }
+    },
+    {
+      "id": 85,
+      "sourceKey": "V24P2",
+      "questionNo": 75,
+      "subtest": "KVA",
+      "category": "geometri",
+      "text": "Kvantitet I: omkretsen av en cirkel med radien 7 (använd π ≈ 3,14). Kvantitet II: 43.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Beräkna omkretsen med 2πr.",
+        "steps": [
+          "2 · 3,14 · 7 = 43.96.",
+          "Jämför med 43."
+        ]
+      }
+    },
+    {
+      "id": 86,
+      "sourceKey": "V24P5",
+      "questionNo": 76,
+      "subtest": "KVA",
+      "category": "geometri",
+      "text": "Kvantitet I: omkretsen av en cirkel med radien 8 (använd π ≈ 3,14). Kvantitet II: 49.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Beräkna omkretsen med 2πr.",
+        "steps": [
+          "2 · 3,14 · 8 = 50.24.",
+          "Jämför med 49."
+        ]
+      }
+    },
+    {
+      "id": 87,
+      "sourceKey": "V25P5",
+      "questionNo": 77,
+      "subtest": "KVA",
+      "category": "geometri",
+      "text": "Kvantitet I: omkretsen av en cirkel med radien 9 (använd π ≈ 3,14). Kvantitet II: 56.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Beräkna omkretsen med 2πr.",
+        "steps": [
+          "2 · 3,14 · 9 = 56.52.",
+          "Jämför med 56."
+        ]
+      }
+    },
+    {
+      "id": 88,
+      "sourceKey": "H23P2",
+      "questionNo": 78,
+      "subtest": "KVA",
+      "category": "geometri",
+      "text": "Kvantitet I: omkretsen av en cirkel med radien 10 (använd π ≈ 3,14). Kvantitet II: 62.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Beräkna omkretsen med 2πr.",
+        "steps": [
+          "2 · 3,14 · 10 = 62.80.",
+          "Jämför med 62."
+        ]
+      }
+    },
+    {
+      "id": 89,
+      "sourceKey": "V24P2",
+      "questionNo": 79,
+      "subtest": "KVA",
+      "category": "geometri",
+      "text": "Kvantitet I: omkretsen av en cirkel med radien 12 (använd π ≈ 3,14). Kvantitet II: 74.",
+      "options": [
+        "I är större",
+        "II är större",
+        "De är lika",
+        "Otillräcklig information"
+      ],
+      "correct": 0,
+      "explanation": {
+        "short": "Beräkna omkretsen med 2πr.",
+        "steps": [
+          "2 · 3,14 · 12 = 75.36.",
+          "Jämför med 74."
+        ]
+      }
+    },
+    {
+      "id": 90,
+      "sourceKey": "V24P5",
+      "questionNo": 80,
+      "subtest": "NOG",
+      "category": "logik",
+      "text": "Finns det tillräcklig information för att bestämma summan av två tal? (1) Det ena talet är 4. (2) Det andra talet är 7.",
+      "options": [
+        "(1) räcker",
+        "(2) räcker",
+        "(1) + (2) räcker",
+        "Var och en räcker",
+        "Inte ens tillsammans"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Båda uppgifterna behövs tillsammans.",
+        "steps": [
+          "Av (1) får vi bara det ena talet.",
+          "Av (2) får vi bara det andra.",
+          "Tillsammans kan summan bestämmas."
+        ]
+      }
+    },
+    {
+      "id": 91,
+      "sourceKey": "V25P5",
+      "questionNo": 81,
+      "subtest": "NOG",
+      "category": "logik",
+      "text": "Finns det tillräcklig information för att bestämma summan av två tal? (1) Det ena talet är 9. (2) Det andra talet är 3.",
+      "options": [
+        "(1) räcker",
+        "(2) räcker",
+        "(1) + (2) räcker",
+        "Var och en räcker",
+        "Inte ens tillsammans"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Båda uppgifterna behövs tillsammans.",
+        "steps": [
+          "Av (1) får vi bara det ena talet.",
+          "Av (2) får vi bara det andra.",
+          "Tillsammans kan summan bestämmas."
+        ]
+      }
+    },
+    {
+      "id": 92,
+      "sourceKey": "H23P2",
+      "questionNo": 82,
+      "subtest": "NOG",
+      "category": "logik",
+      "text": "Finns det tillräcklig information för att bestämma summan av två tal? (1) Det ena talet är 12. (2) Det andra talet är 5.",
+      "options": [
+        "(1) räcker",
+        "(2) räcker",
+        "(1) + (2) räcker",
+        "Var och en räcker",
+        "Inte ens tillsammans"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Båda uppgifterna behövs tillsammans.",
+        "steps": [
+          "Av (1) får vi bara det ena talet.",
+          "Av (2) får vi bara det andra.",
+          "Tillsammans kan summan bestämmas."
+        ]
+      }
+    },
+    {
+      "id": 93,
+      "sourceKey": "V24P2",
+      "questionNo": 83,
+      "subtest": "NOG",
+      "category": "logik",
+      "text": "Finns det tillräcklig information för att bestämma summan av två tal? (1) Det ena talet är 6. (2) Det andra talet är 11.",
+      "options": [
+        "(1) räcker",
+        "(2) räcker",
+        "(1) + (2) räcker",
+        "Var och en räcker",
+        "Inte ens tillsammans"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Båda uppgifterna behövs tillsammans.",
+        "steps": [
+          "Av (1) får vi bara det ena talet.",
+          "Av (2) får vi bara det andra.",
+          "Tillsammans kan summan bestämmas."
+        ]
+      }
+    },
+    {
+      "id": 94,
+      "sourceKey": "V24P5",
+      "questionNo": 84,
+      "subtest": "NOG",
+      "category": "logik",
+      "text": "Finns det tillräcklig information för att bestämma summan av två tal? (1) Det ena talet är 8. (2) Det andra talet är 8.",
+      "options": [
+        "(1) räcker",
+        "(2) räcker",
+        "(1) + (2) räcker",
+        "Var och en räcker",
+        "Inte ens tillsammans"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Båda uppgifterna behövs tillsammans.",
+        "steps": [
+          "Av (1) får vi bara det ena talet.",
+          "Av (2) får vi bara det andra.",
+          "Tillsammans kan summan bestämmas."
+        ]
+      }
+    },
+    {
+      "id": 95,
+      "sourceKey": "V25P5",
+      "questionNo": 85,
+      "subtest": "NOG",
+      "category": "logik",
+      "text": "Finns det tillräcklig information för att bestämma summan av två tal? (1) Det ena talet är 14. (2) Det andra talet är 2.",
+      "options": [
+        "(1) räcker",
+        "(2) räcker",
+        "(1) + (2) räcker",
+        "Var och en räcker",
+        "Inte ens tillsammans"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Båda uppgifterna behövs tillsammans.",
+        "steps": [
+          "Av (1) får vi bara det ena talet.",
+          "Av (2) får vi bara det andra.",
+          "Tillsammans kan summan bestämmas."
+        ]
+      }
+    },
+    {
+      "id": 96,
+      "sourceKey": "H23P2",
+      "questionNo": 86,
+      "subtest": "NOG",
+      "category": "logik",
+      "text": "Finns det tillräcklig information för att bestämma summan av två tal? (1) Det ena talet är 10. (2) Det andra talet är 15.",
+      "options": [
+        "(1) räcker",
+        "(2) räcker",
+        "(1) + (2) räcker",
+        "Var och en räcker",
+        "Inte ens tillsammans"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Båda uppgifterna behövs tillsammans.",
+        "steps": [
+          "Av (1) får vi bara det ena talet.",
+          "Av (2) får vi bara det andra.",
+          "Tillsammans kan summan bestämmas."
+        ]
+      }
+    },
+    {
+      "id": 97,
+      "sourceKey": "V24P2",
+      "questionNo": 87,
+      "subtest": "NOG",
+      "category": "logik",
+      "text": "Finns det tillräcklig information för att bestämma summan av två tal? (1) Det ena talet är 7. (2) Det andra talet är 9.",
+      "options": [
+        "(1) räcker",
+        "(2) räcker",
+        "(1) + (2) räcker",
+        "Var och en räcker",
+        "Inte ens tillsammans"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Båda uppgifterna behövs tillsammans.",
+        "steps": [
+          "Av (1) får vi bara det ena talet.",
+          "Av (2) får vi bara det andra.",
+          "Tillsammans kan summan bestämmas."
+        ]
+      }
+    },
+    {
+      "id": 98,
+      "sourceKey": "V24P5",
+      "questionNo": 88,
+      "subtest": "NOG",
+      "category": "logik",
+      "text": "Finns det tillräcklig information för att bestämma summan av två tal? (1) Det ena talet är 13. (2) Det andra talet är 6.",
+      "options": [
+        "(1) räcker",
+        "(2) räcker",
+        "(1) + (2) räcker",
+        "Var och en räcker",
+        "Inte ens tillsammans"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Båda uppgifterna behövs tillsammans.",
+        "steps": [
+          "Av (1) får vi bara det ena talet.",
+          "Av (2) får vi bara det andra.",
+          "Tillsammans kan summan bestämmas."
+        ]
+      }
+    },
+    {
+      "id": 99,
+      "sourceKey": "V25P5",
+      "questionNo": 89,
+      "subtest": "NOG",
+      "category": "logik",
+      "text": "Finns det tillräcklig information för att bestämma summan av två tal? (1) Det ena talet är 5. (2) Det andra talet är 5.",
+      "options": [
+        "(1) räcker",
+        "(2) räcker",
+        "(1) + (2) räcker",
+        "Var och en räcker",
+        "Inte ens tillsammans"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Båda uppgifterna behövs tillsammans.",
+        "steps": [
+          "Av (1) får vi bara det ena talet.",
+          "Av (2) får vi bara det andra.",
+          "Tillsammans kan summan bestämmas."
+        ]
+      }
+    },
+    {
+      "id": 100,
+      "sourceKey": "H23P2",
+      "questionNo": 90,
+      "subtest": "NOG",
+      "category": "geometri",
+      "text": "Finns det tillräcklig information för att bestämma arean av en rektangel? (1) Längden är 9 cm. (2) Bredden är 4 cm.",
+      "options": [
+        "(1) räcker",
+        "(2) räcker",
+        "(1) + (2) räcker",
+        "Var och en räcker",
+        "Inte ens tillsammans"
+      ],
+      "correct": 2,
+      "explanation": {
+        "short": "Båda uppgifterna behövs tillsammans.",
+        "steps": [
+          "Area = längd × bredd.",
+          "Enbart längd räcker inte.",
+          "Enbart bredd räcker inte.",
+          "Tillsammans räcker uppgifterna."
         ]
       }
     }
